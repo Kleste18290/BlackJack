@@ -1,42 +1,42 @@
 import random
 
     # "Key":value
-deck = {"Ace of hearts":0, "Two of hearts":2, "Three of hearts":3,
-                      "Four of hearts":4, "Five of hearts":5, "Six of heart":6,
-                      "Seven of hearts":7, "Eight of hearts":8, "Nine of hearts":9,
-                      "Ten of hearts":10, "Jack of hearts":10, "King of hearts":10, 
-                      "Queen of hearts":10 }
+def deck_of_cards(hand):
 
-hand = 19
+    deck = {
+        "Ace of hearts":11, 
+        "Two of hearts":2, 
+        "Three of hearts":3,
+        "Four of hearts":4, 
+        "Five of hearts":5, 
+        "Six of heart":6,
+        "Seven of hearts":7, 
+        "Eight of hearts":8, 
+        "Nine of hearts":9,
+        "Ten of hearts":10, 
+        "Jack of hearts":10, 
+        "King of hearts":10, 
+        "Queen of hearts":10 
+        }
+    
+    res = key, val = random.choice(list(deck_of_cards.items()))
+        
+    if hand > 21:
+        deck["Ace of hearts"] = 1       
+    
+    print(str(res))
+    
+def player_hand(deck):
+    # Players hand that accumulates card values.
+    # These will be printed to the screen. 
+    
 
 
-if hand > 21:
-    deck["Ace of hearts"] == 1
-else:
-    deck["Ace of hearts"] == 11
+    total_hand = "Equation for card accumulation here."
+    return total_hand
 
-def players_hand(hand):
-    # This will hold the players cards and clear at 
-    # the start of every round.
-
-    if sum(hand) > 21:
-        print("You have more than a value of 21 in your hand, you have lost the game!")
-        hand.clear
-    pass
-
-def add_card():
-    # This will add a card to the players hand on request.
-    print("Do you wish to add another card?")
-
-    print(random.randrange(deck))
-
-add_card()
-
-
-def player_wins():
-    # A counter that will keep track of the players wins.
-    pass
-
-print(deck["Ace of hearts"])
+def game_conditions(total_hand)
+    if total_hand > 21
+        print("Your hand holds a greater value than 21, you have lost the game!")
 
 
